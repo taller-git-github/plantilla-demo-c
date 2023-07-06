@@ -1,8 +1,15 @@
-add.out: add.c
-	gcc add.c -o add.out
+suma.exe: suma.c
+	gcc suma.c -o suma.exe
+
+suma: suma.exe
+	./suma.exe
+
+mayor.exe: mayor.c
+	gcc mayor.c -o mayor.exe
+
+mayor: mayor.exe
+	./mayor.exe
 
 clean:
-	rm add.out
+	rm suma.exe mayor.exe
 
-add: add.out
-	./add.out
